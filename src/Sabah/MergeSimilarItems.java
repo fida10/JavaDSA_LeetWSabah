@@ -11,7 +11,7 @@ public class MergeSimilarItems {
     }
     static List<List<Integer>> mergeSimilarItems(int[][] items1, int[][] items2) {
             List<List<Integer>> merged = new ArrayList<>();
-            Map<Integer,Integer> map = new HashMap<>();
+            Map<Integer,Integer> map = new TreeMap<>();
 
             for (int [] i : items1){
                 map.put(i[0],i[1]);
